@@ -49,17 +49,18 @@ function prepend(what, where) {
    findAllPSiblings(document.body) // функция должна вернуть массив с элементами div и span т.к. следующим соседом этих элементов является элемент с тегом P
  */
 function findAllPSiblings(where) {
-  const arrayPreviousElement = [];
-  for (let i = 0; i < where.children.length - 1; i++) {
+  var arrayP = [];
+  for (let i = 0; i < where.children.length; i++) {
     //console.log(i);
     //console.log(where.children[i]);
-    if (where.children[i].nextElementSibling.nodeName === 'P') {
-      arrayPreviousElement.push(where.children[i]);
+    if (where.children[i].nodeName === 'P') {
+      arrayP.push(where.children[i - 1].nodeName);
     }
   }
-  //console.log(arrayPreviousElement);
-  return arrayPreviousElement;
+  //console.log(arrayP);
+  return arrayP;
 }
+findAllPSiblings(document.body);
 /*
  Задание 4:
 
