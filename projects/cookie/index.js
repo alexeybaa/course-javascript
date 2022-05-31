@@ -45,6 +45,12 @@ const addButton = homeworkContainer.querySelector('#add-button');
 // таблица со списком cookie
 const listTable = homeworkContainer.querySelector('#list-table tbody');
 
+filterNameInput.addEventListener('input', function () {});
+
+addButton.addEventListener('click', () => {});
+
+listTable.addEventListener('click', (e) => {});
+
 const cookiesMap = getCookies();
 let filterValue = '';
 
