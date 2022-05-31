@@ -26,13 +26,13 @@
 import './cookie.html';
 
 /*
- app - это контейнер для всех ваших домашних заданий
- Если вы создаете новые html-элементы и добавляете их на страницу, то добавляйте их только в этот контейнер
-
- Пример:
-   const newDiv = document.createElement('div');
-   homeworkContainer.appendChild(newDiv);
- */
+  app - это контейнер для всех ваших домашних заданий
+  Если вы создаете новые html-элементы и добавляете их на страницу, то добавляйте их только в этот контейнер
+ 
+  Пример:
+    const newDiv = document.createElement('div');
+    homeworkContainer.appendChild(newDiv);
+  */
 const homeworkContainer = document.querySelector('#app');
 // текстовое поле для фильтрации cookie
 const filterNameInput = homeworkContainer.querySelector('#filter-name-input');
@@ -44,12 +44,6 @@ const addValueInput = homeworkContainer.querySelector('#add-value-input');
 const addButton = homeworkContainer.querySelector('#add-button');
 // таблица со списком cookie
 const listTable = homeworkContainer.querySelector('#list-table tbody');
-
-filterNameInput.addEventListener('input', function () {});
-
-addButton.addEventListener('click', () => {});
-
-listTable.addEventListener('click', (e) => {});
 
 const cookiesMap = getCookies();
 let filterValue = '';
